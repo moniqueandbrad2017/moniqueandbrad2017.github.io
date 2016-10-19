@@ -911,9 +911,9 @@ a.email {
 
 .bonus-case {
     max-height: 700px;
-    width: 900px;
+    max-width: 900px;
     margin-right: 10px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     float: left;
 
     border: 0px;
