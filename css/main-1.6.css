@@ -274,8 +274,18 @@ body {
     min-height: 50%;
 }
 
-#bg-container {
+body {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-90deg, red, blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-90deg, red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-90deg, red, blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-90deg, red, blue); /* Standard syntax */
+}
 
+@media only screen and (min-width: 1000px) {
+    body { 
+        background-image: url('/img/bg-pic.jpg'); 
+    }
 }
 
 section {
@@ -805,11 +815,15 @@ section h2 {
         font-style: normal;
 }
 
-.responsive-image.proposal {
+picture.proposal {
     text-align: center;
     margin: 60px auto 60px auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.responsive-image.proposal img {
+
+picture.proposal img {
     border: 10px solid #090909;
 
     -ms-border-radius: 8px;
@@ -910,11 +924,12 @@ a.email {
 }
 
 .bonus-case {
-    max-height: 700px;
-    max-width: 900px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-    float: left;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+    float: center;
+    width: 80%;
 
     border: 0px;
 
@@ -924,6 +939,24 @@ a.email {
     -webkit-border-radius: 2px;
     border-radius: 2px;
 }
+
+.bonus-image img {
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    border: 10px solid #090909;
+
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;   
+}
+
 
 
 #secret-section {

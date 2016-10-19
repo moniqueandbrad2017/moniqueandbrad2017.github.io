@@ -31,11 +31,11 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         
-
+<!-- 
 
         <div id="bg-image">
             <img src="img/bg-pic.jpg" alt="bg" />
-        </div>
+        </div> -->
 
         <div id="bg-container">
 
@@ -110,11 +110,12 @@
 
                         <div class="column full">
                              
-                            <figure class="responsive-image proposal" data-media="img/proposal-small.jpg" data-media480="img/proposal-small.jpg" data-media768="img/proposal-medium.jpg" data-media1140="img/proposal-large.jpg" title="Brad Proposing To Monique">
-                                <noscript>
-                                    <img src="img/proposal-large.jpg" alt="Brad Proposing To Monique" />
-                                </noscript>
-                            </figure>
+                            <picture class="proposal">
+                              <source srcset="img/proposal-small.jpg" media="(max-width: 440px)">
+                              <source srcset="img/proposal-medium.jpg" media="(max-width: 767px)">
+                              <source srcset="img/proposal-large.jpg">
+                              <img src="img/proposal-large.jpg" alt="proposal">
+                            </picture>
 
                             <h2>THE ENGAGEMENT</h2>
                             <p>Monique never thought that marriage was for her. Brad spent a lot of time convincing her and evenutally she opened up to the idea on the condition that she get the finest Brad-made engagement bracelet in all the land. Not one to shy away from a challenge, Brad accepted. The proposal went down on bikes in the rain on the scenic Broadway Bridge crossing the mighty Willammette river in Portland. </p>
@@ -292,85 +293,106 @@
                             </p>
 
                         <div class="bonus-case">  
-                            <figure class="responsive-image proposal" data-media="img/bonus-pic-1-small.jpg" data-media480="img/bonus-pic-1-small.jpg" data-media768="img/bonus-pic-1-medium.jpg" data-media1140="img/bonus-pic-1.JPG" title="Cowboys">
-                                <noscript>
-                                    <img src="img/bonus-pic-1.JPG" alt="Cowboys" />
-                                </noscript>
-                                <p>You'll note we're looking quite western at this Deer Valley Concert.</p> 
-                            </figure>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-1-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-1-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-1.JPG">
+                            <img src="img/bonus-pic-1.JPG" alt="Cowboys">
+                          </picture>
+                          <p>You'll note we're looking quite western at this Deer Valley Concert.</p> 
                         </div>
 
                         <div class="bonus-case">             
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-2-small.jpg" data-media480="img/bonus-pic-2-small.jpg" data-media768="img/bonus-pic-2-medium.jpg" data-media1140="img/bonus-pic-2.JPG" title="Toro">
-                            <noscript>
-                                <img src="img/bonus-pic-2.JPG" alt="Toro" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-2-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-2-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-2.JPG">
+                            <img src="img/bonus-pic-2.JPG" alt="Toro">
+                          </picture>
                           <p>Toro!</p> 
-                          </figure>
                         </div>                    
 
                         <div class="bonus-case">            
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-3-small.jpg" data-media480="img/bonus-pic-3-small.jpg" data-media768="img/bonus-pic-3-medium.jpg" data-media1140="img/bonus-pic-3.JPG" title="NOLA">
-                            <noscript>
-                                <img src="img/bonus-pic-3.JPG" alt="NOLA" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-3-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-3-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-3.JPG">
+                            <img src="img/bonus-pic-3.JPG" alt="K-bryant">
+                          </picture>
                           <p>That isn't the K. Bryant you think it is.</p> 
-                          </figure>
                         </div>                    
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-4-small.jpg" data-media480="img/bonus-pic-4-small.jpg" data-media768="img/bonus-pic-4-medium.jpg" data-media1140="img/bonus-pic-4.JPG" title="Tahoe">
-                            <noscript>
-                                <img src="img/bonus-pic-4.JPG" alt="Tahoe" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-4-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-4-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-4.JPG">
+                            <img src="img/bonus-pic-4.JPG" alt="Tahoe">
+                          </picture>
                           <p>So scenic. Sunset at Lake Tahoe</p>    
-                          </figure>
                         </div>
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-6-small.jpg" data-media480="img/bonus-pic-6-small.jpg" data-media768="img/bonus-pic-6-medium.jpg" data-media1140="img/bonus-pic-6.JPG" title="Beach">
-                            <noscript>
-                                <img src="img/bonus-pic-6.JPG" alt="Beach" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-6-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-6-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-6.JPG">
+                            <img src="img/bonus-pic-6.JPG" alt="Beach">
+                          </picture>
                           <p>Look out beach, here we come.</p>     
-                          </figure>
                         </div>
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-7-small.jpg" data-media480="img/bonus-pic-7-small.jpg" data-media768="img/bonus-pic-7-medium.jpg" data-media1140="img/bonus-pic-7.JPG" title="Work">
-                            <noscript>
-                                <img src="img/bonus-pic-7.JPG" alt="Work" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-7-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-7-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-7.JPG">
+                            <img src="img/bonus-pic-7.JPG" alt="Work">
+                          </picture>
                           <p>When we first told coworkers that we were a thang.</p>
-                          </figure>
                         </div>
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-8-small.jpg" data-media480="img/bonus-pic-8-small.jpg" data-media768="img/bonus-pic-8-medium.jpg" data-media1140="img/bonus-pic-8.JPG" title="Yosemite">
-                            <noscript>
-                                <img src="img/bonus-pic-8.JPG" alt="Yosemite" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-8-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-8-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-8.JPG">
+                            <img src="img/bonus-pic-8.JPG" alt="Yosemite">
+                          </picture>
                           <p>Yep. We skied up to there.</p>                     
-                          </figure>
                         </div>
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-9-small.jpg" data-media480="img/bonus-pic-9-small.jpg" data-media768="img/bonus-pic-9-medium.jpg" data-media1140="img/bonus-pic-9.JPG" title="Vegas">
-                            <noscript>
-                                <img src="img/bonus-pic-9.JPG" alt="Vegas" />
-                            </noscript>
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-9-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-9-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-9.JPG">
+                            <img src="img/bonus-pic-9.JPG" alt="Vegas">
+                          </picture>
                           <p>Viva Las Vegas.</p>                   
-                          </figure>
+                        </div>
+                        
+                        <div class="bonus-case">  
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-91-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-91-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-91.JPG">
+                            <img src="img/bonus-pic-91.JPG" alt="Chichi">
+                          </picture>
+                          <p>The mighty chi chi.</p>                       
                         </div>
 
                         <div class="bonus-case">  
-                          <figure class="responsive-image proposal" data-media="img/bonus-pic-91-small.jpg" data-media480="img/bonus-pic-91-small.jpg" data-media768="img/bonus-pic-91-medium.jpg" data-media1140="img/bonus-pic-91.JPG" title="Chichi">
-                            <noscript>
-                                <img src="img/bonus-pic-91.JPG" alt="Chichi" />
-                            </noscript>
-                          <p>The mighty chi chi.</p>                       
-                          </figure>
-                        </div><!--end column-->
+                          <picture class="bonus-image">
+                            <source srcset="img/bonus-pic-92-small.jpg" media="(max-width: 440px)">
+                            <source srcset="img/bonus-pic-92-medium.jpg" media="(max-width: 768px)">
+                            <source srcset="img/bonus-pic-92.JPG">
+                            <img src="img/bonus-pic-92.JPG" alt="Skiing">
+                          </picture>
+                          <p>Shredding it up in PC.</p>                       
+                        </div>
+
+                        <!--end column-->
 
 
                     </section>
