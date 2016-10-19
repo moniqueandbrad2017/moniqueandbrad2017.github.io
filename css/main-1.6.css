@@ -275,17 +275,11 @@ body {
 }
 
 body {
-  background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(-90deg, red, blue); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, red, blue); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, red, blue); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-90deg, red, blue); /* Standard syntax */
-}
-
-@media only screen and (min-width: 1000px) {
-    body { 
-        background-image: url('/img/bg-pic.jpg'); 
-    }
+    background: url(/img/bg-pic.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 section {
@@ -349,9 +343,6 @@ section h2 {
     INTERMEDIATE: Menu
    ==================== */
 
-    body {
-        background-position: 50% 20%;
-    }
 
     /** get the transparent bar on the bottom **/
     .header-container {
