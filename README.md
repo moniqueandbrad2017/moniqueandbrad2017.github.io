@@ -1,6 +1,7 @@
 ## TODOs:
-- [ ] Fix the title box for small screens
-- [ ] Double check rsvp form
+- [x] Double check rsvp form
+- [x] Fix the title box for small screens
+- [x] get the bonus section to be the right length
 - [ ] spell check
-- [ ] get the bonus section to be the right length
 - [ ] make sure background is cool
+- [ ] add song to the website?

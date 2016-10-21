@@ -238,7 +238,7 @@ nav ul li a::-moz-focus-inner {border:0;}
 }
 .main header {
     float: left;
-    width: 80%;
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -311,8 +311,8 @@ section {
 
 section h1 {
 
-    font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 2.6em;
+    font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 1.8em;
 
 }
 section h2 {
@@ -362,7 +362,8 @@ section h2 {
     }
 
     #introtext {
-        padding: 30px 0 30px 0;
+        padding: 15px 0 15px 0;
+        /*padding: 30px 0 30px 0;*/
     }
 
     #introtext .head-monique {
@@ -421,7 +422,7 @@ section h2 {
     .main header {
         margin-top: 10%;
         float: left;
-        width: 40%;
+        width: 100%;
         min-width: 320px;
     }
 
@@ -429,7 +430,7 @@ section h2 {
         padding: 40px 40px 70px 40px;
     }
     section h1 {
-        font-size: 3.1em;
+        font-size: 2.8em;
     }
     section h2 {
         font-size: 1.7em;
@@ -466,10 +467,10 @@ section h2 {
    ==================== */
 
     section h1 {
-        font-size: 4.9em;
+        font-size: 2.8em;
     }
     section h2 {
-        font-size: 2.0em;
+        font-size: 1.8em;
     }
 
 /* ============
@@ -528,9 +529,9 @@ section h2 {
         width: 50%;
     }
     .column p {
-        font-size: 1.4em;
+        font-size: 1.3em;
         line-height: 145%;
-        padding: 0 20px;
+        padding: 0 15px;
     }  
 
 }
@@ -948,8 +949,29 @@ a.email {
     border-radius: 2px;   
 }
 
-
-
 #secret-section {
     height: 4800px;
+}
+
+.bridal-party {
+    padding-right: 8px;
+}
+
+.bridal-party-pic {
+    margin-bottom: 20px;
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    border: 10px solid #090909;
+
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;   
+}
 }
