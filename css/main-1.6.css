@@ -263,16 +263,7 @@ body {
     width: 200%; 
     height: 200%;
 }
-#bg-image img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%;
-}
+
 
 body {
     background: url(/img/bg-pic.jpg) no-repeat center center fixed;
@@ -282,6 +273,25 @@ body {
     background-size: cover;
 }
 
+@media all and (max-width: 600px) and (min-width: 0px) {
+    body {
+        background: url(/img/bg-pic-small.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media all and (max-width: 990px) and (min-width: 601px) {
+    body {
+        background: url(/img/bg-pic-medium.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
 section {
     text-align: left;
     padding: 25px;
