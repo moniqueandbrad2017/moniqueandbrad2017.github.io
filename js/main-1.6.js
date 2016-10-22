@@ -92,5 +92,9 @@ $(function() {
     $('figure.responsive-image').picture();
 
     // Makes screen size correct
-    $("#secret-section").height($("#secret-section-title").height() + $("#secret-section-pics").height() + 100)
+	setTimeout(function(){
+	    $("#secret-section").height($("#secret-section-title").height() + $("#secret-section-pics").height() + 100)
+	}, 1000);
+
+    
 });
