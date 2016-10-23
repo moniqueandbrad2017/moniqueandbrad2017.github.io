@@ -265,7 +265,7 @@ body {
 }
 
 
-#bg-container {
+body {
     background: url(/img/bg-pic.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -274,22 +274,22 @@ body {
 }
 
 @media all and (max-width: 600px) and (min-width: 0px) {
-    #bg-container {
+    body {
         background: url(/img/bg-pic-small.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: contain;
     }
 }
 
 @media all and (max-width: 990px) and (min-width: 601px) {
-    #bg-container {
+    body {
         background: url(/img/bg-pic-medium.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
+        background-size: contain;
     }
 }
 section {
