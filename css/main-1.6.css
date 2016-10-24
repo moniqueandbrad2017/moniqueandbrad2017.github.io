@@ -273,27 +273,12 @@ body {
     background-size: cover;
 }
 
-@media all and (max-width: 600px) and (min-width: 0px) {
+@media all and (max-width: 990px) {
     body {
-        background: url(/img/bg-pic-small.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: contain;
-        background-position-y: 0%;
+        background: linear-gradient(86deg, #1f2f6d, #6ea7c5);
     }
 }
 
-@media all and (max-width: 990px) and (min-width: 601px) {
-    body {
-        background: url(/img/bg-pic-medium.jpg) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: contain;
-        background-position-y: 0%;
-    }
-}
 section {
     text-align: left;
     padding: 25px;
